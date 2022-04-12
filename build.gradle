@@ -1,0 +1,27 @@
+plugins {
+    id 'application'
+}
+apply plugin: 'application'
+apply plugin: 'java'
+
+mainClassName = 'com.geekskey.java.WelcomeToJava'
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation "joda-time:joda-time:2.2"
+    testImplementation "junit:junit:4.12"
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
