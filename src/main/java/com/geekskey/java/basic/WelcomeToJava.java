@@ -1,4 +1,4 @@
-package com.geekskey.java;
+package com.geekskey.java.basic;
 
 public class WelcomeToJava {
 
